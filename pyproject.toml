@@ -2,10 +2,13 @@
 name = "autoconfig"
 version = "0.1.0"
 description = "Simple AutoConfig: env extraction + unified config loader (env/json/yaml/toml)"
-authors = [{ name = "Your Name", email = "you@example.com" }]
+authors = [
+    { name = "Your Name", email = "you@example.com" }
+]
 readme = "README.md"
 license = { text = "MIT" }
 requires-python = ">=3.9"
+
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -17,10 +20,10 @@ classifiers = [
     "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries :: Python Modules"
 ]
-urls = { 
-    "Homepage" = "https://github.com/username/autoconfig",
-    "Documentation" = "https://github.com/username/autoconfig#readme"
-}
+
+[project.urls]
+Homepage = "https://github.com/Champion99-tech/autoconfig"
+Documentation = "https://github.com/Champion99-tech/autoconfig#readme"
 
 [project.scripts]
 autoconfig = "autoconfig.cli:main"
@@ -29,8 +32,17 @@ autoconfig = "autoconfig.cli:main"
 yaml = ["PyYAML>=5.4"]
 toml = ["tomli>=2.0.1"]
 env = ["python-dotenv>=0.19.0"]
-all = ["PyYAML>=5.4", "tomli>=2.0.1", "python-dotenv>=0.19.0"]
-dev = ["pytest>=7.0", "PyYAML", "tomli>=2.0.1", "python-dotenv"]
+all = [
+    "PyYAML>=5.4",
+    "tomli>=2.0.1",
+    "python-dotenv>=0.19.0"
+]
+dev = [
+    "pytest>=7.0",
+    "PyYAML",
+    "tomli>=2.0.1",
+    "python-dotenv"
+]
 
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
