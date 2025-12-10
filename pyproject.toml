@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "autoconfig"
 version = "0.1.1"
@@ -43,7 +47,3 @@ dev = [
     "tomli>=2.0.1",
     "python-dotenv"
 ]
-
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
