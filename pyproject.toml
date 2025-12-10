@@ -1,9 +1,9 @@
 [project]
 name = "autoconfig"
-version = "0.1.0"
+version = "0.1.1"
 description = "Simple AutoConfig: env extraction + unified config loader (env/json/yaml/toml)"
 authors = [
-    { name = "Your Name", email = "you@example.com" }
+    { name = "Ahmed Gamal", email = "kazanova.star.sh@gmail.com" }
 ]
 readme = "README.md"
 license = { text = "MIT" }
