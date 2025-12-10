@@ -23,8 +23,8 @@ jobs:
           python-version: '3.11'
 
       - name: Install build tools
-        run: pip install build
-
+        run: pip install flit-core
+        
       - name: Build package
         run: python -m build
 
